@@ -4,7 +4,7 @@ var Schema = mongoose.Schema;
 
 var GenreSchema = new Schema(
     {
-        Genre_Type: {type: String, required: true, enum: ['Fiction', 'Non-fiction', 'Romance', 'Sci-Fi'], default: 'Unknown' },
+        Name: {type: String, required: true, minlength: 3, maxlength: 100 }
     }
 );
 
